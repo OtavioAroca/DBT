@@ -43,6 +43,7 @@ if resposta.status_code == 200:
         VALUES (?, ?, ?, ?)
     """, (data_coleta, temperatura, umidade, pressao))
     
+
     conn.commit()
     print("✅ Dados inseridos com sucesso!")
 else:
